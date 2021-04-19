@@ -1,0 +1,45 @@
+﻿<UserControl x:Class="Checkers.Views.HomeView"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:Checkers.Views"
+              xmlns:themes="http://materialdesigninxaml.net/winfx/xaml/themes"
+              xmlns:t="http://schemas.xceed.com/wpf/xaml/toolkit"
+             mc:Ignorable="d" 
+             d:DesignHeight="450" d:DesignWidth="800">
+    <UserControl.Resources>
+        <ResourceDictionary >
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source="pack://application:,,,/MaterialDesignThemes.Wpf;component/Themes/MaterialDesignTheme.Light.xaml" />
+                <ResourceDictionary Source="pack://application:,,,/MaterialDesignThemes.Wpf;component/Themes/MaterialDesignTheme.Defaults.xaml" />
+                <ResourceDictionary Source="pack://application:,,,/MaterialDesignColors;component/Themes/Recommended/Primary/MaterialDesignColor.DeepPurple.xaml" />
+                <ResourceDictionary Source="pack://application:,,,/MaterialDesignColors;component/Themes/Recommended/Accent/MaterialDesignColor.Lime.xaml" />
+            </ResourceDictionary.MergedDictionaries>
+        </ResourceDictionary>
+    </UserControl.Resources>
+    <UserControl.Background>
+        <ImageBrush ImageSource="/Views/Resources/homeFont.jpeg"/>
+    </UserControl.Background>
+
+
+    <StackPanel Width="250" VerticalAlignment="Center" HorizontalAlignment="Center"  >
+        <themes:Card   Background="DarkCyan"   Margin="10">
+            <Button Command="{Binding StartCommand}"  BorderThickness="4" BorderBrush="White" Margin="5" Height="{Binding ElementName=card, Path=Height}" >Continue</Button>
+        </themes:Card>
+        <themes:Card   Background="DarkCyan"   Margin="10">
+            <Button Command="{Binding NewGametCommand}"  BorderThickness="4" BorderBrush="White" Margin="5" Height="{Binding ElementName=card, Path=Height}" Cursor="Hand" >New Game</Button>
+        </themes:Card>
+        <themes:Card   Background="DarkCyan"   Margin="10">
+            <Button Command="{Binding LoadGameCommand}"  BorderThickness="4" BorderBrush="White" Margin="5" Height="{Binding ElementName=card, Path=Height}" Cursor="Hand" >Load Game</Button>
+        </themes:Card>
+        <themes:Card Background="DarkCyan"  Margin="10">
+            <Button  Command="{Binding SettingCommand}" BorderThickness="4" BorderBrush="White" Margin="5" Height="{Binding ElementName=card, Path=Height}" >Setting</Button>
+        </themes:Card>
+        <themes:Card Background="DarkCyan"   Margin="10">
+            <Button Command="{Binding ExitCommand}"  BorderThickness="4" BorderBrush="White" Margin="5" Height="{Binding ElementName=card, Path=Height}" Cursor="Hand" >Exit</Button>
+        </themes:Card>
+
+
+    </StackPanel>
+</UserControl>

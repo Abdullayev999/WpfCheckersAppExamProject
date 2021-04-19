@@ -1,0 +1,73 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net5.0-windows</TargetFramework>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="black.png" />
+    <None Remove="Views\Resources\black.png" />
+    <None Remove="Views\Resources\blackCLasik.png" />
+    <None Remove="Views\Resources\blackClasikDamka.png" />
+    <None Remove="Views\Resources\blackDamka.png" />
+    <None Remove="Views\Resources\checkersgame.jpg" />
+    <None Remove="Views\Resources\fonBoard.jpg" />
+    <None Remove="Views\Resources\fonBoardSetting.jpg" />
+    <None Remove="Views\Resources\homeFont.jpeg" />
+    <None Remove="Views\Resources\red.png" />
+    <None Remove="Views\Resources\redDamka.png" />
+    <None Remove="Views\Resources\white.png" />
+    <None Remove="Views\Resources\whiteDamka.png" />
+    <None Remove="Views\whiite.png" />
+    <None Remove="white.jpg" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Extended.Wpf.Toolkit" Version="4.0.2" />
+    <PackageReference Include="MaterialDesignThemes" Version="4.0.0" />
+    <PackageReference Include="MvvmLightLibsStd10" Version="5.4.1.1" />
+    <PackageReference Include="SimpleInjector" Version="5.3.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Views\Resources\black.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Views\Resources\blackCLasik.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Views\Resources\blackClasikDamka.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Views\Resources\blackDamka.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Views\Resources\checkersgame.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Views\Resources\fonBoard.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Views\Resources\fonBoardSetting.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Views\Resources\homeFont.jpeg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Views\Resources\red.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Views\Resources\redDamka.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Views\Resources\white.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Views\Resources\whiteDamka.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+  </ItemGroup>
+
+</Project>
